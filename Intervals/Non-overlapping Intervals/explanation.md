@@ -49,16 +49,5 @@ This approach tries to keep the interval with the **earlier end time** in case o
 
 - **Space Complexity (SC):** `O(1)` extra (ignoring sorting space)
 
-## Important Note
 
-While this solution **works correctly** for many test cases, sorting by **start time** + taking min end in overlap is **not always guaranteed** to give the absolute minimum removals in every possible case (though it often does).  
-
-The **standard & proven optimal** greedy for this problem is to **sort by end time** (`a[1] < b[1]`), then simply skip overlapping intervals without min update.
-
-Your version (with `min` update) **passes most cases** and is a valid greedy variant — but for maximum reliability in interviews, prefer sorting by **end time**.
-
-## Final Recommendation
-
-Your code is **correct in logic** and will pass most test cases — great job!  
-Just be aware that the canonical way is **sort by end time**.
 
